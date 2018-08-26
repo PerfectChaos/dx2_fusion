@@ -2756,7 +2756,8 @@ var app = new Vue({
 
             var now = new Date();
             var utc = now.getTime() + now.getTimezoneOffset() * 60000;
-            this.now = new Date( utc + 9 * 3600000 );
+            // this.now = new Date( utc + 9 * 3600000 );
+            this.now = new Date(utc);
         },
         tick:function(){
 /*
@@ -2829,7 +2830,8 @@ var app = new Vue({
             this.gate_timer_jp = "";
 
             //orb
-            var day = this.now.getDay();
+            var day = this.now.getUTCDay();
+
             this.orbs[0].state = (day==1||day==6);          //light
             this.orbs[1].state = (day==2||day==6);          //dark
             this.orbs[2].state = (day==3||day==6||day==0);  //natural
