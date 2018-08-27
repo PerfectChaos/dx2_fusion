@@ -2830,7 +2830,7 @@ var app = new Vue({
             this.gate_timer_jp = "";
 
             //orb
-            var day = this.now.getUTCDay();
+            var day = this.now.getDay();
 
             this.orbs[0].state = (day==1||day==6);          //light
             this.orbs[1].state = (day==2||day==6);          //dark
