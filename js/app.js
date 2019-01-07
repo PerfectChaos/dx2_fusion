@@ -116,6 +116,18 @@ const ddd_stable = [{
         ['Haunt', 'Jaki']
     ],
     devils: [{
+        name: 'Izanami',
+        name_tw: '',
+        name_en: 'Izanami',
+        rarity: 5,
+        grade: 89,
+        icon: '',
+        skills: ["Bolt Storm", "Merciless Blow", "Yomotsu Okami"],
+        skill4: ["Life Surge", "Hell Gaze", "Concentrate", "Elec Amp", "Repel Ice"],
+        skill5: ["", "Auto-Rakunda", "Silent Prayer", "Maziodyne", "Recarmdra"],
+        elements: ["", "Weak", "Null", "", "", "Resist", "Drain"],
+        type: "Support"
+    }, {
         name: 'Lakshmi',
         name_tw: '吉祥天',
         name_en: 'Lakshmi',
@@ -5501,6 +5513,13 @@ const skill_stable = [{
             "name": "Lunar Blessing",
             "name_tw": "月之庇佑",
             "desc": "Reduces consumed MP by 1 MP.",
+            "mp": null,
+            "point": null,
+            "element": "Passive"
+        }, {
+            "name": "Yomotsu Okami",
+            "name_tw": "",
+            "desc": "While the demon with this skill is alive, +10% to Elec and Dark damage for All Party Members",
             "mp": null,
             "point": null,
             "element": "Passive"
